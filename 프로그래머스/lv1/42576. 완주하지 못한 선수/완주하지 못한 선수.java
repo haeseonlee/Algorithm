@@ -2,8 +2,7 @@ import java.util.*;
 class Solution {
     public String solution(String[] participant, String[] completion) {
         String answer = "";
-        Map<String, Integer> hm = new HashMap<>();
-        
+        Map<String,Integer> hm = new HashMap<>();
         for(String p : participant){
             hm.put(p, hm.getOrDefault(p,0) + 1);
         }
